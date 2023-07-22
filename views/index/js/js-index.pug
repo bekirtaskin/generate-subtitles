@@ -34,16 +34,16 @@ script.
   const wssPrepend = protocol === 'https:' ? 'wss' : 'ws';
 
   // websocket server
-  const websocketAndServerEndpoint = `${wssPrepend}://${ipAndPort}/${randomNumber}`
+  const websocketAndServerEndpoint = `${wssPrepend}://${ipAndPort}/transcribe/${randomNumber}`
 
   // connect to server
   const websocketConnection = new WebSocket(websocketAndServerEndpoint);
 
   // file endpoint
-  const uploadUrl = `${httpPrepend}://${ipAndPort}/file`;
+  const uploadUrl = `${httpPrepend}://${ipAndPort}/transcribe/file`;
 
   // check outstanding jobs endpoint
-  const checkAmountOfOutstandingJobsUrl = `${httpPrepend}://${ipAndPort}/checkingOutstandingProcesses`;
+  const checkAmountOfOutstandingJobsUrl = `${httpPrepend}://${ipAndPort}/transcribe/checkingOutstandingProcesses`;
 
   // passed from server
   const isFreeSubtitles = !{isFreeSubtitles};
