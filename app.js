@@ -110,13 +110,13 @@ app.use(function (req, res, next) {
   next();
 })
 
-app.use('/', routes);
-app.use('/', api);
-app.use('/users', users);
-app.use('/', stats);
-app.use('/', transcribe);
-app.use('/', admin);
-app.use('/', player);
+app.use('/transcribe/', routes);
+app.use('/transcribe/', api);
+app.use('/transcribe/users', users);
+app.use('/transcribe/', stats);
+app.use('/transcribe/', transcribe);
+app.use('/transcribe/', admin);
+app.use('/transcribe/', player);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
