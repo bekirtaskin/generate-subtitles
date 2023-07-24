@@ -42,7 +42,11 @@ router.post('/file', upload.single('file'), async function (req, res, next) {
     l(req.body);
 
     const referer = req.headers.referer;
+    l('referer');
+    l(referer)
     const urlObject = url.parse(referer);
+    l('urlObject');
+    l(urlObject)
     const pathname = urlObject.pathname;
     const isYtdlp = pathname === '/ytdlp';
 
