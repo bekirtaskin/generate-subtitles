@@ -24,7 +24,7 @@ router.get('/player/:filename' , async function (req, res, next) {
     const processingData = JSON.parse(await fs.readFile(processingDataPath, 'utf8'));
 
 
-    const filePathWithoutExtension = `/transcriptions/${fileNameWithoutExtension}/${processingData.directoryFileName}`;
+    const filePathWithoutExtension = `/transcribe/transcriptions/${fileNameWithoutExtension}/${processingData.directoryFileName}`;
 
     // l('filePathWithoutExtension')
     // l(filePathWithoutExtension);
