@@ -1,3 +1,7 @@
+# changes
+
+This fork is created to make this project run behind gateway. Paths are changes to serve under transcriber suffix.
+
 # generate-subtitles
 
 Generate transcripts for audio and video content with a user friendly UI, powered by Open AI's Whisper with automatic translations powered by LibreTranslate. Live for free public use at https://freesubtitles.ai
